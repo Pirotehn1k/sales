@@ -4,13 +4,17 @@ public class SalesCalcService {
 
     public int salesSum(int[] SalesArr) {
         int sum = 0;
-        for (int i = 0; i < SalesArr.length; i++) sum += SalesArr[i];
+        for (int i = 0; i < SalesArr.length; i++) {
+            sum += SalesArr[i];
+        }
         return sum;
     }
 
     public int salesMid(int[] SalesArr) {
         int sum = 0;
-        for (int i = 0; i < SalesArr.length; i++) sum += SalesArr[i];
+        for (int i = 0; i < SalesArr.length; i++) {
+            sum += SalesArr[i];
+        }
         int mid = sum / SalesArr.length;
 
 
@@ -44,7 +48,9 @@ public class SalesCalcService {
     public int salesLowMid(int[] SalesArr) {
         int lowMid = 0;
         int sum = 0;
-        for (int i = 0; i < SalesArr.length; i++) sum += SalesArr[i];
+        for (int i = 0; i < SalesArr.length; i++) {
+            sum += SalesArr[i];
+        }
         int mid = sum / SalesArr.length;
         for (int i = 0; i < SalesArr.length; i++) {
             if (SalesArr[i] < mid) {
@@ -59,7 +65,9 @@ public class SalesCalcService {
     public int salesUpMid(int[] SalesArr) {
         int upMid = 0;
         int sum = 0;
-        for (int i = 0; i < SalesArr.length; i++) sum += SalesArr[i];
+        for (int i = 0; i < SalesArr.length; i++) {
+            sum += SalesArr[i];
+        }
         int mid = sum / SalesArr.length;
         for (int i = 0; i < SalesArr.length; i++) {
             if (SalesArr[i] > mid) {
