@@ -3,14 +3,14 @@ package ru.netology.services;
 public class Main {
     public static void main(String[] args) {
 
-        int[] SalesArr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] salesArr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         SalesCalcService service = new SalesCalcService();
-        int sum = service.salesSum(SalesArr);
-        int mid = service.salesMid(SalesArr);
-        int max = service.salesMax(SalesArr);
-        int min = service.salesMin(SalesArr);
-        int lowMid = service.salesLowMid(SalesArr);
-        int upMid = service.salesUpMid(SalesArr);
+        int sum = service.salesSum(salesArr);
+        int mid = service.salesMid(salesArr);
+        int max = service.salesMax(salesArr);
+        int min = service.salesMin(salesArr);
+        int lowMid = service.salesLowMid(salesArr);
+        int upMid = service.salesUpMid(salesArr);
 
 
         System.out.println("сумма продаж =" + sum);

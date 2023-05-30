@@ -2,30 +2,27 @@ package ru.netology.services;
 
 public class SalesCalcService {
 
-    public int salesSum(int[] SalesArr) {
+    public int salesSum(int[] salesArr) {
         int sum = 0;
-        for (int i = 0; i < SalesArr.length; i++) {
-            sum += SalesArr[i];
+        for (int i = 0; i < salesArr.length; i++) {
+            sum += salesArr[i];
         }
         return sum;
     }
 
-    public int salesMid(int[] SalesArr) {
-        int sum = 0;
-        for (int i = 0; i < SalesArr.length; i++) {
-            sum += SalesArr[i];
-        }
-        int mid = sum / SalesArr.length;
+    public int salesMid(int[] salesArr) {
+        int sum = salesSum(salesArr) ;
+        int mid = sum / salesArr.length;
 
 
         return mid;
     }
 
-    public int salesMax(int[] SalesArr) {
+    public int salesMax(int[] salesArr) {
         int max = 0;
 
-        for (int i = 0; i < SalesArr.length; i++) {
-            if (SalesArr[i] >= SalesArr[max]) {
+        for (int i = 0; i < salesArr.length; i++) {
+            if (salesArr[i] >= salesArr[max]) {
                 max = i;
             }
         }
@@ -33,11 +30,11 @@ public class SalesCalcService {
         return max + 1;
     }
 
-    public int salesMin(int[] SalesArr) {
+    public int salesMin(int[] salesArr) {
         int min = 0;
 
-        for (int i = 0; i < SalesArr.length; i++) {
-            if (SalesArr[i] <= SalesArr[min]) {
+        for (int i = 0; i < salesArr.length; i++) {
+            if (salesArr[i] <= salesArr[min]) {
                 min = i;
             }
         }
@@ -45,15 +42,11 @@ public class SalesCalcService {
         return min + 1;
     }
 
-    public int salesLowMid(int[] SalesArr) {
+    public int salesLowMid(int[] salesArr) {
         int lowMid = 0;
-        int sum = 0;
-        for (int i = 0; i < SalesArr.length; i++) {
-            sum += SalesArr[i];
-        }
-        int mid = sum / SalesArr.length;
-        for (int i = 0; i < SalesArr.length; i++) {
-            if (SalesArr[i] < mid) {
+        int mid = salesMid(salesArr);
+        for (int i = 0; i < salesArr.length; i++) {
+            if (salesArr[i] < mid) {
                 lowMid++;
             }
         }
@@ -62,15 +55,11 @@ public class SalesCalcService {
         return lowMid;
     }
 
-    public int salesUpMid(int[] SalesArr) {
+    public int salesUpMid(int[] salesArr) {
         int upMid = 0;
-        int sum = 0;
-        for (int i = 0; i < SalesArr.length; i++) {
-            sum += SalesArr[i];
-        }
-        int mid = sum / SalesArr.length;
-        for (int i = 0; i < SalesArr.length; i++) {
-            if (SalesArr[i] > mid) {
+        int mid = salesMid(salesArr);
+        for (int i = 0; i < salesArr.length; i++) {
+            if (salesArr[i] > mid) {
                 upMid++;
             }
         }

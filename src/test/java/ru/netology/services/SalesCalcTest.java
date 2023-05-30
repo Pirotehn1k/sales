@@ -10,9 +10,9 @@ public class SalesCalcTest {
     public void testSum() {
         SalesCalcService service = new SalesCalcService();
 
-        int[] SalesArr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] salesArr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 180;
-        int actual = service.salesSum(SalesArr);
+        int actual = service.salesSum(salesArr);
         Assertions.assertEquals(expected, actual);
 
     }
@@ -22,9 +22,9 @@ public class SalesCalcTest {
     public void testMid() {
         SalesCalcService service = new SalesCalcService();
 
-        int[] SalesArr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] salesArr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 15;
-        int actual = service.salesMid(SalesArr);
+        int actual = service.salesMid(salesArr);
         Assertions.assertEquals(expected, actual);
 
     }
@@ -34,9 +34,9 @@ public class SalesCalcTest {
     public void testMax() {
         SalesCalcService service = new SalesCalcService();
 
-        int[] SalesArr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] salesArr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 8;
-        int actual = service.salesMax(SalesArr);
+        int actual = service.salesMax(salesArr);
         Assertions.assertEquals(expected, actual);
 
     }
@@ -46,9 +46,9 @@ public class SalesCalcTest {
     public void testMin() {
         SalesCalcService service = new SalesCalcService();
 
-        int[] SalesArr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] salesArr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 9;
-        int actual = service.salesMin(SalesArr);
+        int actual = service.salesMin(salesArr);
         Assertions.assertEquals(expected, actual);
 
     }
@@ -59,9 +59,9 @@ public class SalesCalcTest {
     public void testLowMid() {
         SalesCalcService service = new SalesCalcService();
 
-        int[] SalesArr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] salesArr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 5;
-        int actual = service.salesLowMid(SalesArr);
+        int actual = service.salesLowMid(salesArr);
         Assertions.assertEquals(expected, actual);
 
     }
@@ -72,9 +72,9 @@ public class SalesCalcTest {
     public void testUpMid() {
         SalesCalcService service = new SalesCalcService();
 
-        int[] SalesArr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] salesArr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 5;
-        int actual = service.salesUpMid(SalesArr);
+        int actual = service.salesUpMid(salesArr);
         Assertions.assertEquals(expected, actual);
 
     }
